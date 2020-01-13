@@ -1,0 +1,6 @@
+@import "variables";
+
+@mixin wrapper {
+  max-width: $width;
+  margin: 0 auto;
+}
