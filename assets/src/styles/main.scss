@@ -37,12 +37,25 @@
 //@import "node_modules/bootstrap/scss/_tooltip";
 //@import "node_modules/bootstrap/scss/_utilities";
 //@import "node_modules/bootstrap/scss/bootstrap";
-//@import "node_modules/bootstrap/scss/bootstrap-reboot";
+@import "node_modules/bootstrap/scss/bootstrap-reboot";
 //@import "node_modules/bootstrap/scss/bootstrap-grid";
 
 // bases
+html, body {
+  min-height: 100vh;
+  // Для прижатия футера к низу
+  display: flex;
+  flex-direction: column;
+}
+
+body > .hr {
+  height: 1px;
+  display: inline-block;
+  box-shadow: 0 2px 3px #b7b7b7;
+  width: 100%;
+}
+
 @import "base/fonts";
-@import "base/wrapper";
 @import "helpers/mixins";
 @import "helpers/variables";
 @import "../blocks/modules";

@@ -27,13 +27,11 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-<div class="wrapper">
-    <header>
-    
+<header>
+    <div class="header-wrap">
         <div class="logo">
             <img src="img/logo.svg" alt="">
         </div>
-    
         <div class="main-menu">
             <ul class="main-menu__ul">
                 <li class="main-menu__li">JavaScript</li>
@@ -41,32 +39,148 @@
                 <li class="main-menu__li">Pyton</li>
                 <li class="main-menu__li">SQL</li>
                 <li class="main-menu__li">Linux</li>
+                <li class="main-menu__li">Linux</li>
             </ul>
         </div>
-    
         <div class="auth">
             <button type="button" class="auth__btn">Регистрация</button>
             <button type="button" class="auth__btn">Войти</button>
         </div>
-    
         <span class="hr"></span>
-    
-        <div class="main-menuBottom">
-            <ul class="main-menuBottom__ul">
-                <li class="main-menuBottom__li">Верстка</li>
-                <li class="main-menuBottom__li">CSS</li>
-                <li class="main-menuBottom__li">Flexbox</li>
-                <li class="main-menuBottom__li">Grid</li>
-                <li class="main-menuBottom__li">jQuery</li>
-                <li class="main-menuBottom__li">Vue.js</li>
-                <li class="main-menuBottom__li">React.js</li>
+    </div>
+    <!-- /. header-wrap-->
+    <div class="social-wrap">
+        <div class="search">
+            <input class="input__search" type="text" placeholder="Поиск...">
+            <button class="search__button">Искать</button>
+        </div>
+        <div class="social">
+            <a href=""><img class="social__img" src="img/social/vk-social-logotype.svg" alt=""></a>
+            <a href=""><img class="social__img" src="img/social/instagram.svg" alt=""></a>
+            <a href=""><img class="social__img" src="img/social/telegram.svg" alt=""></a>
+            <a href=""><img class="social__img" src="img/social/facebook.svg" alt=""></a>
+        </div>
+    </div>
+    <!-- /.social-wrap-->
+    <div class="main-menuBottom">
+        <ul class="main-menuBottom__ul">
+            <li class="main-menuBottom__li">Верстка</li>
+            <li class="main-menuBottom__li">CSS</li>
+            <li class="main-menuBottom__li">Flexbox</li>
+            <li class="main-menuBottom__li">Grid</li>
+            <li class="main-menuBottom__li">jQuery</li>
+            <li class="main-menuBottom__li">Vue.js</li>
+            <li class="main-menuBottom__li">React.js</li>
+        </ul>
+    </div>
+    <!-- /.main-menuBottom-->
+</header>
+<span class="hr"></span>
+<section class="slider">
+    <p class="slider__text">
+        Справочный
+        портал по языкам
+        программирования
+    </p>
+    <img class="slider__img" src="img/slider-background.png" alt="">
+</section>
+<div class="content-wrap">
+    <section class="content">
+        <div class="card">
+            <div class="card__item">
+                <h2 class="card__title">Властелин консоли: познай тайны дебаггинга</h2>
+                <p class="card__text">Умеешь только в простейшие консольные заклинания типа console.log?
+                    Мы сделаем тебя великим мастером консоли!
+                </p>
+                <img class="card__img" src="img/javscript2.png" alt="">
+            </div>
+            <div class="card__item">
+                <h2 class="card__title">75 моментов, которые ты обязан учесть перед запуском сайта</h2>
+                <p class="card__text">Умеешь только в простейшие консольные заклинания типа console.log?
+                    Мы сделаем тебя великим мастером консоли!
+                </p>
+                <img class="card__img" src="img/zapusk.jpg" alt="">
+            </div>
+            <div class="card__item">
+                <h2 class="card__title">TOП-12 JavaScript-концепций: от ссылок до асинхронных операций</h2>
+                <p class="card__text">12 JavaScript-концепций, в которых должен разбираться каждый уважающий себя
+                    разработчик. Знать – необходимо, повторять – полезно.
+                </p>
+                <img class="card__img" src="img/js.jpeg" alt="">
+            </div>
+        </div>
+        <div class="side">
+            <div class="side__item">
+                <h3>История просмотров</h3>
+                <p>
+                    Здесь будут отображаться ссылки на последние просмотренные страницы
+                </p>
+            </div>
+            <div class="side__item">
+                <h3>Пишем приложение на Vue.js</h3>
+                <p>
+                    В этом уроке мы рассмотрим как правильно писать приложения на фрейморке Vue.js
+                </p>
+            </div>
+            <div class="side__item">
+                <h3>Пишем сайт на PHP</h3>
+                <p>
+                    В этом уроке мы рассмотрим как правильно строить архитектуру сайта и
+                    строить роутинг
+                </p>
+            </div>
+            <div class="side__item">
+                <h3>Препроцессор Sass</h3>
+                <p>
+                    Стили для сайтов и приложений на чистом Sass. Верстка шаблона,компиля-
+                    ция Sass при помощи gulp
+                </p>
+            </div>
+            <div class="side__item">
+                <h3>Игра на JavaScript</h3>
+                <p>
+                    Разработка небольшой игры на javascript, которая поможет лучше понять как писать на этом языке
+                </p>
+            </div>
+            <div class="side__item">
+                <h3>Посмотреть позже</h3>
+                <p>
+                    <a href="http://falbar.ru/" target="_blank">Не плохой сайт (информация, дизайн)</a>
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="footer">
+    <div class="footer-wrap">
+        <div class="footer-menu">
+            <ul class="footer__ul">
+                <li class="footer__li">О сайте</li>
+                <li class="footer__li">Контакты</li>
+                <li class="footer__li">Автор проекта</li>
+                <li class="footer__li"><b>Политика конфиденциальности</b></li>
             </ul>
         </div>
-    
-    </header>
+        <!--/.footer-menu-->
+        <div class="social">
+            <a href=""><img class="social__img" src="img/social/vk-social-logotype.svg" alt=""></a>
+            <a href=""><img class="social__img" src="img/social/instagram.svg" alt=""></a>
+            <a href=""><img class="social__img" src="img/social/telegram.svg" alt=""></a>
+            <a href=""><img class="social__img" src="img/social/facebook.svg" alt=""></a>
+            <div class="auth">
+                <button type="button" class="auth__btn">Регистрация</button>
+                <button type="button" class="auth__btn">Авторизация</button>
+            </div>
+        </div>
+        <!-- ./social -->
+    </div>
+    <!-- /.footer-wrap -->
+</footer>
+<div class="copyright">
+    <div class="copyright__text">
+        <p>&copy; 2020 Шигаев Дмитрий {kodla}. Все права защищены.</p>
+    </div>
 </div>
-<hr>
-
 <script src="js/main.min.js"></script>
 </body>
 </html>

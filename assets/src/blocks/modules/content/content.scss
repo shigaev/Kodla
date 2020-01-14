@@ -1,0 +1,76 @@
+.content-wrap {
+  @include wrapper-full;
+  background-color: #F6FCFF;
+  margin: 50px 0 0 0;
+  padding: 50px 0 70px 0;
+  min-height: 450px;
+
+  // Прижимаем к низу footer
+  flex: 1 0 auto;
+
+  .content {
+    @include wrapper;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+    // Posts-content
+    .card {
+      width: calc(100% / 12 * 8);
+      padding: 0 10px;
+      @include raleway-r;
+
+      .card__item {
+        background-color: #ffffff;
+        margin: 20px 0;
+        border-radius: 10px;
+        box-shadow: 0 3px 4px rgba(108, 117, 125, 0.66);
+
+        .card__title {
+          padding: 15px;
+        }
+
+        .card__text {
+          padding: 0 15px 15px;
+        }
+
+        .card__img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    // Right-Sidebar
+    .side {
+      width: calc(100% / 12 * 4);
+      margin: 20px 0;
+      padding: 0 15px;
+      @include raleway-r;
+
+      .side__item {
+        background-color: #ffffff;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        box-shadow: 0 3px 4px rgba(108, 117, 125, 0.66);
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      .card {
+        width: 100%
+      }
+      .side {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content-wrap {
+    padding: 0 0 70px 0;
+  }
+}

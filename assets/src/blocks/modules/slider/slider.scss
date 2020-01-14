@@ -1,0 +1,40 @@
+.slider {
+  @include wrapper;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px;
+
+  .slider__text {
+    @include raleway-r; // Шрифт Raleway-Regular
+    width: calc(100% / 12 * 6 - 30px);
+    font-size: 36px;
+    color: $text-color;
+    padding: 0 15px;
+    z-index: 99;
+  }
+
+  .slider__img {
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 3;
+    margin: 0 5px;
+  }
+  @media screen and (max-width: 1090px) {
+    .slider__text {
+      width: calc(100% / 12 * 8 - 30px);
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .slider__text {
+      width: calc(100% - 30px);
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 380px) {
+    .slider__text {
+      font-size: 30px;
+    }
+  }
+}

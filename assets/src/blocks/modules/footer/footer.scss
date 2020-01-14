@@ -1,3 +1,60 @@
-footer h1 {
-  color: green;
+.footer {
+  .footer-wrap {
+    @include wrapper;
+    @include raleway-r;
+    color: $text-color;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .footer-menu {
+      max-width: 400px;
+
+      .footer__ul {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+
+        .footer__li {
+          padding: 0 10px;
+          margin: 5px 0;
+        }
+      }
+    }
+
+
+    .social {
+      padding: 0 45px;
+
+      .social__img {
+        width: 2.5em;
+        margin: 0 5px;
+      }
+
+      .auth {
+        margin: 20px 0;
+
+        .auth__btn {
+          display: block;
+          margin: 5px 0;
+          background: none;
+          border: none;
+          color: $text-color;
+        }
+      }
+    }
+  }
+}
+
+.copyright {
+  @include wrapper-full;
+  @include raleway-r;
+  background-color: rgb(53, 53, 53);
+
+  .copyright__text {
+    @include wrapper;
+    padding: 15px;
+    color: rgb(113, 113, 113);
+  }
 }
